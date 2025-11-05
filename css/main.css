@@ -67,12 +67,26 @@ header .container {
   justify-content: space-between;
 }
 
+@media(max-width: 767px) {
+  header .container {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
 header .logo {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--main-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media(max-width: 767px) {
+  header .logo {
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
 }
 
 header .links {
@@ -90,6 +104,13 @@ header .link a {
   text-decoration: none;
   transition: var(--main-transition);
   text-transform: capitalize;
+}
+
+@media(max-width: 575px) {
+  header .link a {
+    padding: 3px 5px;
+    font-size: 14px;
+  }
 }
 
 header .link a:hover {
