@@ -204,10 +204,14 @@ main .card a.github:hover {
 /* end main */
 /* start footer */
 footer {
-  background-color: var(--main-color);
+  background-color: var(--main-color-alt);
   color: white;
   padding: 30px 0;
   font-size: 1.1rem;
+}
+
+footer ::selection {
+  background-color: var(--main-color);
 }
 
 footer .container {
@@ -250,4 +254,5 @@ footer .contact a {
     transform: rotate(360deg);
   }
 }
+
 /* end animation */
