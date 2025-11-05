@@ -1,8 +1,8 @@
 /* global rules */
 :root {
-  --main-color: #009688;
-  --main-color-alt: #25b6a7;
-  --section-background-color: #e3e3e3;
+  --main-color: #00c1fc;
+  --main-color-alt: #00a6ed;
+  --section-background-color: #ebebeb;
   --main-transition: 0.3s;
   --header-height: 65px;
 }
@@ -132,10 +132,12 @@ main .card img {
   display: block;
   max-width: 100%;
   transition: var(--main-transition);
+  filter: grayscale(1);
 }
 
 main .card:hover img {
   transform: rotate(4deg) scale(1.15);
+  filter: grayscale(0);
 }
 
 main .card h3 {
