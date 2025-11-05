@@ -133,7 +133,7 @@ main .card img {
   display: block;
   max-width: 100%;
   transition: var(--main-transition);
-  filter: grayscale(1);
+  filter: grayscale(0.6);
 }
 
 main .card:hover img {
