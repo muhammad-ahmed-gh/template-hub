@@ -148,18 +148,32 @@ main .card:hover {
 main .card .image {
   border-radius: 5px;
   overflow: hidden;
+  position: relative;
+}
+
+main .card .image::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+main .card:hover .image::after {
+  animation: card-glow 0.6s;
 }
 
 main .card img {
   display: block;
   max-width: 100%;
   transition: var(--main-transition);
-  filter: grayscale(0.6);
 }
 
 main .card:hover img {
   transform: rotate(4deg) scale(1.15);
-  filter: grayscale(0);
 }
 
 main .card h3 {
@@ -273,6 +287,20 @@ footer .contact a {
 @keyframes rotation {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes card-glow {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 
