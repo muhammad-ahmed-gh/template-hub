@@ -89,6 +89,7 @@ header .link a {
   color: initial;
   text-decoration: none;
   transition: var(--main-transition);
+  text-transform: capitalize;
 }
 
 header .link a:hover {
