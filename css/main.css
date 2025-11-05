@@ -1,7 +1,9 @@
 /* global rules */
 :root {
-  --main-color: #00c1fc;
-  --main-color-alt: #00a6ed;
+  /* --main-color: #00c1fc;
+  --main-color-alt: #00a6ed; */
+  --main-color: #7800fc;
+  --main-color-alt: #4e02b1;
   --section-background-color: #ebebeb;
   --main-transition: 0.3s;
   --header-height: 65px;
