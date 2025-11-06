@@ -2,8 +2,8 @@
 :root {
   /* --main-color: #00c1fc;
   --main-color-alt: #00a6ed; */
-  --main-color: #7800fc;
-  --main-color-alt: #4e02b1;
+  --main-color: #9f49ff;
+  --main-color-alt: #941fff;
   --section-background-color: #ebebeb;
   --main-transition: 0.3s;
   --header-height: 65px;
@@ -241,14 +241,10 @@ main .card a.github:hover {
 /* end main */
 /* start footer */
 footer {
-  background-color: var(--main-color-alt);
+  background-color: #717070;
   color: white;
   padding: 30px 0;
   font-size: 1.1rem;
-}
-
-footer ::selection {
-  background-color: var(--main-color);
 }
 
 footer .container {
