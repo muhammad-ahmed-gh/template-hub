@@ -172,6 +172,7 @@ main .card img {
   display: block;
   max-width: 100%;
   transition: var(--main-transition);
+  filter: hue-rotate(-45deg) contrast(1.2);
 }
 
 main .card:hover img {
